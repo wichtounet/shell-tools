@@ -14,4 +14,4 @@ Sort files by their number of lines
 Find the top 15 longest files
 -----------------------------------
 
-> wc -l `find . -name "*.cpp"` | sort -n -r | tail -n +2 | head -n 15
+> wc -l \`find . -name "*.cpp"\` | sort -n -r | tail -n +2 | head -n 15
