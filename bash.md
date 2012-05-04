@@ -9,4 +9,9 @@ Replace in a set of files
 Sort files by their number of lines
 -----------------------------------
 
-> wc -l src/*.cpp | sort -n -r | tail -n +2
+> wc -l `find . -name "*.cpp"` | sort -n -r | tail -n +2
+
+Find the top 15 longest files
+-----------------------------------
+
+> wc -l `find . -name "*.cpp"` | sort -n -r | tail -n +2 | head -n 15
